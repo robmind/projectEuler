@@ -1,8 +1,3 @@
-//first way
 var num = Enumerable.Range(0, 101).ToList().Sum(i => Math.Pow(i, 2));
 var ba = Math.Pow(Enumerable.Range(0, 101).ToList().Sum(i => i), 2);
 // result is (ba - num) --> 25164150
-
-//second way
-double result = Math.Pow(Enumerable.Range(0, 101).ToList().Sum(i => i), 2) - Enumerable.Range(0, 101).ToList().Sum((i => Math.Pow(i, 2)));
-// result is --> 25164150
