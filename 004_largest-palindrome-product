@@ -1,0 +1,19 @@
+List<int> source = new List<int>();
+int num;
+for (int index1 = 100; index1 <= 999; ++index1)
+{
+    for (int index2 = 100; index2 <= 999; ++index2)
+    {
+        num = index1 * index2;
+        string str1 = num.ToString();
+        num = index1 * index2;
+        string str2 = new string(num.ToString().Reverse<char>().ToArray<char>());
+        if (str1 == str2)
+        {
+            source.Add(index1 * index2);
+        }
+    }
+}
+num = source.Max();
+
+//result (num) --> 906609
